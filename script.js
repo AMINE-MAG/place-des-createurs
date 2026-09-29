@@ -31,73 +31,97 @@
   }
 
   /* =====================================================
-     === i18n
-     ===================================================== */
-  function applyI18n(lang) {
-    const dict = DATA.i18n?.[lang] || {};
-    currentLang = lang;
-    document.documentElement.lang = lang;
+   === i18n
+   ===================================================== */
+function applyI18n(lang) {
+  const dict = DATA.i18n?.[lang];
+  if (!dict) {
+    console.warn(`[PDC] Langue "${lang}" introuvable dans data.json.`);
+    return;
+  }
 
-    document.querySelectorAll('[data-i18n]').forEach((el) => {
-      const v = get(dict, el.dataset.i18n);
-      if (typeof v === 'string') el.textContent = v;
-    });
+  currentLang = lang;
+  document.documentElement.lang = lang;
 
-    document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
-      const v = get(dict, el.dataset.i18nAriaLabel);
-      if (typeof v === 'string') el.setAttribute('aria-label', v);
-    });
+  // Texte simple
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const v = get(dict, el.dataset.i18n);
+    if (typeof v === 'string') el.textContent = v;
+  });
 
-    document.querySelectorAll('[data-i18n-title]').forEach((el) => {
-      const v = get(dict, el.dataset.i18nTitle);
-      if (typeof v === 'string') el.setAttribute('title', v);
-    });
+  // aria-label
+  document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
+    const v = get(dict, el.dataset.i18nAriaLabel);
+    if (typeof v === 'string') el.setAttribute('aria-label', v);
+  });
 
-    // Meta title + description
-    const title = get(dict, 'meta.title');
-    const desc = get(dict, 'meta.description');
-    if (title) document.title = title;
-    if (desc) {
-      const m = document.querySelector('meta[name="description"]');
-      if (m) m.setAttribute('content', desc);
+  // Meta
+  const title = get(dict, 'meta.title');
+  const desc  = get(dict, 'meta.description');
+  if (title) document.title = title;
+  if (desc) {
+    const m = document.querySelector('meta[name="description"]');
+    if (m) m.setAttribute('content', desc);
+  }
+
+  // État des boutons FR/EN
+  document.querySelectorAll('.lang__btn').forEach((btn) => {
+    const active = btn.dataset.lang === lang;
+    btn.classList.toggle('is-active', active);
+    btn.setAttribute('aria-pressed', String(active));
+  });
+
+  updateBurgerLabel();
+}
+
+function setLang(lang) {
+  if (!DATA.i18n?.[lang]) {
+    console.warn(`[PDC] setLang("${lang}") ignoré : langue absente.`);
+    return;
+  }
+
+  try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) {}
+
+  document.body.classList.add('is-lang-changing');
+
+  // On applique tout dans le même tick, puis on retire la classe
+  applyI18n(lang);
+  renderAll();
+
+  requestAnimationFrame(() => {
+    document.body.classList.remove('is-lang-changing');
+  });
+}
+
+function initLang() {
+  let lang = 'fr';
+
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored && DATA.i18n?.[stored]) lang = stored;
+    else if (DATA.config?.defaultLang && DATA.i18n?.[DATA.config.defaultLang]) {
+      lang = DATA.config.defaultLang;
     }
+  } catch (_) {}
 
-    // Lang toggle state
-    document.querySelectorAll('.lang__btn').forEach((btn) => {
-      const active = btn.dataset.lang === lang;
-      btn.classList.toggle('is-active', active);
-      btn.setAttribute('aria-pressed', String(active));
+  // Si aucune langue n'est disponible, on log une erreur explicite
+  if (!DATA.i18n?.[lang]) {
+    console.error(
+      '[PDC] Aucune langue chargée. Vérifie que assets/data.json est bien accessible ' +
+      '(lance un serveur local — pas de file://).'
+    );
+  }
+
+  // Listener sur les boutons
+  document.querySelectorAll('.lang__btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.lang;
+      if (target && target !== currentLang) setLang(target);
     });
+  });
 
-    // Burger aria-label (depending on state)
-    updateBurgerLabel();
-  }
-
-  function setLang(lang, { animate = true } = {}) {
-    if (!DATA.i18n?.[lang]) return;
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) {}
-    if (animate) {
-      document.body.classList.add('is-lang-changing');
-      setTimeout(() => document.body.classList.remove('is-lang-changing'), 150);
-    }
-    applyI18n(lang);
-    renderAll();
-  }
-
-  function initLang() {
-    let lang = 'fr';
-    try { lang = localStorage.getItem(STORAGE_KEY) || DATA.config.defaultLang || 'fr'; } catch (_) {}
-    if (!DATA.i18n?.[lang]) lang = 'fr';
-
-    document.querySelectorAll('.lang__btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        if (btn.dataset.lang !== currentLang) setLang(btn.dataset.lang);
-      });
-    });
-
-    applyI18n(lang);
-  }
-
+  applyI18n(lang);
+}
   /* =====================================================
      === CONFIG (URLs, email, etc.)
      ===================================================== */
@@ -335,17 +359,26 @@
   /* =====================================================
      === BOOT
      ===================================================== */
-  async function boot() {
-    await loadData();
-    applyConfig();
-    initLang();
-    renderAll();
-    initCountdown();
-    initNav();
-    initHeader();
-    initTabs();
-    observeReveals();
+async function boot() {
+  await loadData();
+
+  // Garde : si data.json n'a pas chargé, on le dit clairement
+  if (!DATA.i18n?.fr || !DATA.i18n?.en) {
+    console.error(
+      '[PDC] data.json n\'a pas pu être lu. ' +
+      'Ouvre le site via un serveur local (python3 -m http.server 8000).'
+    );
   }
+
+  applyConfig();
+  initLang();
+  renderAll();
+  initCountdown();
+  initNav();
+  initHeader();
+  initTabs();
+  observeReveals();
+}
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', boot);
