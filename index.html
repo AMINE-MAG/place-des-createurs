@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Place des Créateurs — Marché des artisans des métiers de bouche à Grenoble</title>
+  <meta name="description" content="Deux jours pour découvrir, goûter et rencontrer les artisans des métiers de bouche de Grenoble. 12 & 13 décembre 2026, Cowool Grenoble. Entrée libre.">
+  <meta name="theme-color" content="#F2EAD9">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Place des Créateurs">
+  <meta property="og:description" content="Le rendez-vous des artisans des métiers de bouche à Grenoble — 12 & 13 décembre 2026.">
+  <meta property="og:image" content="assets/images/og-place-des-createurs.jpg">
+  <meta property="og:locale" content="fr_FR">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F2EAD9'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='44' fill='%23231A12'%3EPC%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Aller au contenu</a>
+
+  <!-- ============ SVG SPRITE (artisanal icons) ============ -->
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <symbol id="ico-bread" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 40 Q10 26 22 26 L42 26 Q54 26 54 40 Q54 50 44 50 L20 50 Q10 50 10 40 Z"/>
+      <path d="M20 26 L24 38"/><path d="M30 26 L34 38"/><path d="M40 26 L44 38"/>
+    </symbol>
+    <symbol id="ico-honey" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="18" y="20" width="28" height="34" rx="2"/>
+      <path d="M16 14 L48 14 L46 20 L18 20 Z"/>
+      <path d="M26 34 Q32 40 38 34"/>
+    </symbol>
+    <symbol id="ico-cheese" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 46 L56 30 L56 46 Z"/>
+      <circle cx="24" cy="42" r="2"/><circle cx="38" cy="38" r="1.8"/><circle cx="46" cy="44" r="1.5"/>
+    </symbol>
+    <symbol id="ico-olive" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 54 Q28 34 50 18"/>
+      <path d="M44 14 Q50 10 56 14"/>
+      <ellipse cx="26" cy="42" rx="5" ry="6.5" transform="rotate(-40 26 42)"/>
+      <ellipse cx="38" cy="30" rx="4.5" ry="5.5" transform="rotate(-40 38 30)"/>
+    </symbol>
+    <symbol id="ico-chili" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M24 20 Q24 16 30 16 Q38 16 40 24 Q42 34 34 44 Q28 50 22 46 Q18 44 24 38 Q30 32 30 26 Q30 22 24 20 Z"/>
+      <path d="M28 16 Q26 10 20 10"/>
+    </symbol>
+    <symbol id="ico-jar" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 20 L44 20 L46 24 L44 50 Q44 52 42 52 L22 52 Q20 52 20 50 L18 24 Z"/>
+      <path d="M16 14 L48 14 L46 20 L18 20 Z"/>
+      <path d="M22 30 Q32 34 42 30"/>
+    </symbol>
+    <symbol id="ico-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12 L19 12 M13 6 L19 12 L13 18"/>
+    </symbol>
+    <symbol id="ico-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+    </symbol>
+    <symbol id="ico-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 4 H13 a4 4 0 0 0 -4 4 V20 M8 12 H15"/>
+    </symbol>
+    <symbol id="ico-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="M3 7 L12 13 L21 7"/>
+    </symbol>
+    <symbol id="ico-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 4 H20 V10 M20 4 L10 14 M18 14 V19 A1 1 0 0 1 17 20 H5 A1 1 0 0 1 4 19 V7 A1 1 0 0 1 5 6 H10"/>
+    </symbol>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="header__inner">
+      <a class="brand" href="#top" aria-label="Place des Créateurs">
+        <span class="brand__mark" aria-hidden="true">PC</span>
+        <span class="brand__name">Place&nbsp;des&nbsp;Créateurs</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#accueil"    data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#a-propos"   data-i18n="nav.about">À propos</a></li>
+          <li><a href="#programme"  data-i18n="nav.programme">Programme</a></li>
+          <li><a href="#exposants"  data-i18n="nav.exhibitors">Exposants</a></li>
+          <li><a href="#infos"      data-i18n="nav.info">Infos pratiques</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="lang" role="group" data-i18n-aria-label="a11y.lang">
+          <button type="button" class="lang__btn is-active" data-lang="fr" aria-pressed="true">FR</button>
+          <span class="lang__sep" aria-hidden="true">/</span>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <a class="btn btn--primary header__cta" href="#exposants" data-i18n="nav.cta">Devenir exposant</a>
+
+        <button class="burger" type="button" aria-controls="primary-nav" aria-expanded="false" data-i18n-aria-label="a11y.openMenu">
+          <span class="burger__line" aria-hidden="true"></span>
+          <span class="burger__line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <div class="auvent" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="accueil">
+      <div class="hero__inner">
+        <p class="hero__kicker" data-i18n="hero.kicker">12 — 13 décembre 2026 · Grenoble</p>
+
+        <h1 class="hero__title">
+          <span class="hero__line"><span class="hero__line-inner" data-i18n="hero.titleLine1">Place</span></span>
+          <span class="hero__line"><span class="hero__line-inner" data-i18n="hero.titleLine2">des Créateurs</span></span>
+        </h1>
+
+        <p class="hero__subtitle" data-i18n="hero.subtitle">Le rendez-vous des artisans et producteurs des métiers de bouche à Grenoble.</p>
+
+        <div class="countdown" role="timer" aria-live="off" data-i18n-aria-label="a11y.countdown">
+          <p class="countdown__label" data-i18n="hero.countdown.label">Ouverture dans</p>
+          <div class="countdown__grid">
+            <div class="countdown__unit">
+              <span class="countdown__value" data-count="days">00</span>
+              <span class="countdown__key" data-i18n="hero.countdown.days">jours</span>
+            </div>
+            <span class="countdown__sep" aria-hidden="true">:</span>
+            <div class="countdown__unit">
+              <span class="countdown__value" data-count="hours">00</span>
+              <span class="countdown__key" data-i18n="hero.countdown.hours">heures</span>
+            </div>
+            <span class="countdown__sep" aria-hidden="true">:</span>
+            <div class="countdown__unit">
+              <span class="countdown__value" data-count="minutes">00</span>
+              <span class="countdown__key" data-i18n="hero.countdown.minutes">minutes</span>
+            </div>
+            <span class="countdown__sep" aria-hidden="true">:</span>
+            <div class="countdown__unit">
+              <span class="countdown__value" data-count="seconds">00</span>
+              <span class="countdown__key" data-i18n="hero.countdown.seconds">secondes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#programme" data-i18n="hero.cta.visit">Je visite</a>
+          <a class="btn btn--ghost" href="#exposants" data-i18n="hero.cta.exhibit">J'expose</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ANCHOR + FLOW ============ -->
+    <div class="layout">
+
+      <aside class="anchor" data-i18n-aria-label="a11y.anchorLabel">
+        <div class="anchor__item">
+          <span class="anchor__label" data-i18n="anchor.dates.label">Dates</span>
+          <span class="anchor__value" data-i18n="anchor.dates.value">12 — 13 décembre 2026</span>
+        </div>
+        <div class="anchor__item">
+          <span class="anchor__label" data-i18n="anchor.hours.label">Horaires</span>
+          <span class="anchor__value" data-i18n="anchor.hours.value">10h — 18h</span>
+        </div>
+        <div class="anchor__item">
+          <span class="anchor__label" data-i18n="anchor.venue.label">Lieu</span>
+          <span class="anchor__value" data-i18n="anchor.venue.value">Cowool Grenoble</span>
+        </div>
+        <div class="anchor__badge">
+          <span class="badge badge--olive" data-i18n="anchor.freeEntry">Entrée libre</span>
+        </div>
+      </aside>
+
+      <div class="flow">
+
+        <!-- ============ ABOUT ============ -->
+        <section class="section" id="a-propos" aria-labelledby="about-title">
+          <header class="section__head" data-reveal>
+            <h2 class="section__title" id="about-title" data-i18n="about.title">À propos</h2>
+            <p class="section__lead" data-i18n="about.lead">Pendant deux jours, venez découvrir, goûter, échanger et rencontrer des artisans et entrepreneurs passionnés qui font vivre le goût et le savoir-faire autrement.</p>
+          </header>
+
+          <div class="cards cards--4" data-reveal>
+            <article class="card">
+              <svg class="card__icon" aria-hidden="true"><use href="#ico-bread"/></svg>
+              <h3 class="card__title" data-i18n="about.card1.title">Découvrir</h3>
+              <p class="card__text" data-i18n="about.card1.text">Des produits façonnés à la main, des recettes transmises, des gestes qui se voient.</p>
+            </article>
+            <article class="card">
+              <svg class="card__icon" aria-hidden="true"><use href="#ico-honey"/></svg>
+              <h3 class="card__title" data-i18n="about.card2.title">Goûter</h3>
+              <p class="card__text" data-i18n="about.card2.text">Dégustations, échantillons, assiettes : on vient aussi pour le goût.</p>
+            </article>
+            <article class="card">
+              <svg class="card__icon" aria-hidden="true"><use href="#ico-olive"/></svg>
+              <h3 class="card__title" data-i18n="about.card3.title">Échanger</h3>
+              <p class="card__text" data-i18n="about.card3.text">Poser des questions, comprendre une matière, discuter du prix juste.</p>
+            </article>
+            <article class="card">
+              <svg class="card__icon" aria-hidden="true"><use href="#ico-cheese"/></svg>
+              <h3 class="card__title" data-i18n="about.card4.title">Rencontrer</h3>
+              <p class="card__text" data-i18n="about.card4.text">Les visages derrière les produits, les ateliers, les producteurs.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- ============ PROGRAMME (visitors) ============ -->
+        <section class="section" id="programme" aria-labelledby="programme-title">
+          <header class="section__head" data-reveal>
+            <p class="section__kicker" data-i18n="visitors.kicker">Pour les visiteurs</p>
+            <h2 class="section__title" id="programme-title" data-i18n="visitors.title">Ce qui vous attend</h2>
+          </header>
+
+          <div class="programme" data-reveal>
+            <div class="programme__tabs" role="tablist" aria-label="Programme">
+              <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-day1" id="tab-day1" data-i18n="visitors.programme.day1">Vendredi 12 décembre</button>
+              <button class="tab" role="tab" aria-selected="false" aria-controls="panel-day2" id="tab-day2" data-i18n="visitors.programme.day2">Samedi 13 décembre</button>
+            </div>
+            <div class="programme__panels">
+              <div class="panel" role="tabpanel" id="panel-day1" aria-labelledby="tab-day1">
+                <p class="panel__placeholder" data-i18n="visitors.programme.placeholder">Programme en cours de finalisation.</p>
+              </div>
+              <div class="panel" role="tabpanel" id="panel-day2" aria-labelledby="tab-day2" hidden>
+                <p class="panel__placeholder" data-i18n="visitors.programme.placeholder">Programme en cours de finalisation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="subsection" data-reveal>
+            <h3 class="subsection__title" data-i18n="visitors.exhibitors.title">Quelques exposants</h3>
+            <p class="subsection__lead" data-i18n="visitors.exhibitors.lead">Boulangers, pâtissiers, chocolatiers, apiculteurs, fromagers — voici un aperçu.</p>
+            <div class="exhibitor-grid" data-render="exhibitors"></div>
+          </div>
+
+          <div class="subsection" data-reveal>
+            <h3 class="subsection__title" data-i18n="visitors.animations.title">Ateliers et animations</h3>
+            <p class="subsection__text" data-i18n="visitors.animations.text">[À COMPLÉTER]</p>
+          </div>
+        </section>
+
+        <!-- ============ EXHIBITORS (recruitment) ============ -->
+        <section class="section section--brick" id="exposants" aria-labelledby="exhibitors-title">
+          <header class="section__head" data-reveal>
+            <p class="section__kicker" data-i18n="exhibitors.kicker">Pour les exposants</p>
+            <h2 class="section__title" id="exhibitors-title" data-i18n="exhibitors.title">Exposer à la Place des Créateurs</h2>
+            <p class="section__lead" data-i18n="exhibitors.lead">Deux jours pour présenter votre production, rencontrer un public curieux et rejoindre un réseau local d'artisans.</p>
+          </header>
+
+          <!-- Pourquoi exposer -->
+          <div class="why" data-reveal>
+            <h3 class="block-title" data-i18n="exhibitors.why.title">Pourquoi exposer</h3>
+            <div class="why__grid">
+              <article class="why__item">
+                <h4 class="why__title" data-i18n="exhibitors.why.r1.title">Visibilité locale</h4>
+                <p class="why__text" data-i18n="exhibitors.why.r1.text">Un événement grand public à Grenoble, au cœur du mois de décembre.</p>
+              </article>
+              <article class="why__item">
+                <h4 class="why__title" data-i18n="exhibitors.why.r2.title">Un réseau</h4>
+                <p class="why__text" data-i18n="exhibitors.why.r2.text">Une trentaine d'artisans et de producteurs réunis pendant deux jours.</p>
+              </article>
+              <article class="why__item">
+                <h4 class="why__title" data-i18n="exhibitors.why.r3.title">Un public engagé</h4>
+                <p class="why__text" data-i18n="exhibitors.why.r3.text">Des visiteurs qui viennent pour acheter, goûter et comprendre.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Tarifs -->
+          <div class="pricing" data-reveal>
+            <h3 class="block-title" data-i18n="exhibitors.pricing.title">Tarifs des stands</h3>
+            <div class="stands" data-render="stands"></div>
+            <p class="pricing__note" data-i18n="exhibitors.pricing.note">Tarifs de lancement pour l'édition 2026.</p>
+          </div>
+
+          <!-- Critères -->
+          <div class="eligibility" data-reveal>
+            <h3 class="block-title" data-i18n="exhibitors.eligibility.title">Critères d'éligibilité</h3>
+            <ul class="eligibility__list" data-render="eligibility"></ul>
+          </div>
+
+          <!-- Candidater -->
+          <div class="apply" data-reveal>
+            <h3 class="block-title" data-i18n="exhibitors.apply.title">Candidater</h3>
+            <p class="apply__lead" data-i18n="exhibitors.apply.lead">Remplissez le formulaire de candidature.</p>
+            <a class="btn btn--primary btn--lg" href="#" data-config-href="formUrl" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="exhibitors.apply.cta">Candidater via le formulaire</span>
+              <svg class="btn__icon" aria-hidden="true"><use href="#ico-external"/></svg>
+            </a>
+            <p class="apply__note" data-i18n="exhibitors.apply.note">Aucune date limite affichée.</p>
+          </div>
+        </section>
+
+        <!-- ============ PRACTICAL INFO ============ -->
+        <section class="section" id="infos" aria-labelledby="info-title">
+          <header class="section__head" data-reveal>
+            <p class="section__kicker" data-i18n="info.kicker">Infos pratiques</p>
+            <h2 class="section__title" id="info-title" data-i18n="info.title">Venir, se repérer</h2>
+          </header>
+
+          <div class="info" data-reveal>
+            <div class="info__venue">
+              <h3 class="info__venue-name" data-i18n="info.venue">Cowool Grenoble</h3>
+              <p class="info__address" data-i18n="info.address">1 avenue d'Innsbruck, 38000 Grenoble</p>
+              <a class="link-arrow" href="#" data-config-href="mapsUrl" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="info.mapsCta">Ouvrir dans Google Maps</span>
+                <svg aria-hidden="true"><use href="#ico-arrow"/></svg>
+              </a>
+            </div>
+
+            <dl class="info__list">
+              <div class="info__row">
+                <dt data-i18n="info.dates.label">Dates</dt>
+                <dd data-i18n="info.dates.value">12 & 13 décembre 2026</dd>
+              </div>
+              <div class="info__row">
+                <dt data-i18n="info.hours.label">Horaires</dt>
+                <dd data-i18n="info.hours.value">10h — 18h</dd>
+              </div>
+              <div class="info__row">
+                <dt data-i18n="info.access.label">Accès</dt>
+                <dd data-i18n="info.access.value">[À COMPLÉTER]</dd>
+              </div>
+              <div class="info__row">
+                <dt data-i18n="info.pmr.label">Accessibilité PMR</dt>
+                <dd data-i18n="info.pmr.value">[À COMPLÉTER]</dd>
+              </div>
+            </dl>
+
+            <div class="info__contact">
+              <p class="info__contact-label" data-i18n="info.contact.label">Contact</p>
+              <ul class="info__contact-list">
+                <li>
+                  <a href="#" data-config-href="email" data-config-mailto>
+                    <svg aria-hidden="true"><use href="#ico-mail"/></svg>
+                    <span data-config-text="email">contact@place-des-createurs.fr</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-config-href="instagramUrl" target="_blank" rel="noopener noreferrer">
+                    <svg aria-hidden="true"><use href="#ico-instagram"/></svg>
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" data-config-href="facebookUrl" target="_blank" rel="noopener noreferrer">
+                    <svg aria-hidden="true"><use href="#ico-facebook"/></svg>
+                    <span>Facebook</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /flow -->
+    </div><!-- /layout -->
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="brand-full" aria-hidden="true">
+          <span class="brand-full__mark">PC</span>
+          <span class="brand-full__band">Place des Créateurs</span>
+        </div>
+        <p class="footer__baseline" data-i18n="footer.baseline">Le rendez-vous des artisans des métiers de bouche à Grenoble.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Navigation de pied de page">
+        <p class="footer__title" data-i18n="footer.quick.title">Naviguer</p>
+        <ul>
+          <li><a href="#a-propos"   data-i18n="nav.about">À propos</a></li>
+          <li><a href="#programme"  data-i18n="nav.programme">Programme</a></li>
+          <li><a href="#exposants"  data-i18n="nav.exhibitors">Exposants</a></li>
+          <li><a href="#infos"      data-i18n="nav.info">Infos pratiques</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <p class="footer__title" data-i18n="footer.follow.title">Suivre</p>
+        <ul>
+          <li>
+            <a href="#" data-config-href="instagramUrl" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#ico-instagram"/></svg><span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-config-href="facebookUrl" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#ico-facebook"/></svg><span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-config-href="email" data-config-mailto>
+              <svg aria-hidden="true"><use href="#ico-mail"/></svg><span data-config-text="email">contact@place-des-createurs.fr</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <p data-i18n="footer.rights">© 2026 Place des Créateurs.</p>
+      <ul>
+        <li><a href="#" data-config-href="legalUrl" data-i18n="footer.legal.mentions">Mentions légales</a></li>
+        <li><a href="#" data-config-href="privacyUrl" data-i18n="footer.legal.privacy">Politique de confidentialité</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
