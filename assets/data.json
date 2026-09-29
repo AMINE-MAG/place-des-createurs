@@ -1,0 +1,294 @@
+{
+  "config": {
+    "defaultLang": "fr",
+    "countdownTarget": "2026-12-12T10:00:00+01:00",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cowool+Grenoble+1+avenue+d%27Innsbruck",
+    "formUrl": "https://forms.gle/REMPLACER-PAR-LE-LIEN-DU-FORMULAIRE",
+    "instagramUrl": "https://www.instagram.com/",
+    "facebookUrl": "https://www.facebook.com/",
+    "email": "contact@place-des-createurs.fr",
+    "legalUrl": "#",
+    "privacyUrl": "#"
+  },
+  "i18n": {
+    "fr": {
+      "meta.title": "Place des Créateurs — Marché des artisans des métiers de bouche à Grenoble",
+      "meta.description": "Deux jours pour découvrir, goûter et rencontrer les artisans des métiers de bouche de Grenoble. 12 & 13 décembre 2026, Cowool Grenoble. Entrée libre.",
+
+      "a11y.skip": "Aller au contenu",
+      "a11y.lang": "Choix de la langue",
+      "a11y.openMenu": "Ouvrir le menu",
+      "a11y.closeMenu": "Fermer le menu",
+      "a11y.anchorLabel": "Repères de l'événement",
+      "a11y.countdown": "Compte à rebours avant l'ouverture",
+
+      "nav.home": "Accueil",
+      "nav.about": "À propos",
+      "nav.programme": "Programme",
+      "nav.exhibitors": "Exposants",
+      "nav.info": "Infos pratiques",
+      "nav.cta": "Devenir exposant",
+
+      "hero.kicker": "12 — 13 décembre 2026 · Grenoble",
+      "hero.titleLine1": "Place",
+      "hero.titleLine2": "des Créateurs",
+      "hero.subtitle": "Le rendez-vous des artisans et producteurs des métiers de bouche à Grenoble.",
+      "hero.countdown.label": "Ouverture dans",
+      "hero.countdown.days": "jours",
+      "hero.countdown.hours": "heures",
+      "hero.countdown.minutes": "minutes",
+      "hero.countdown.seconds": "secondes",
+      "hero.cta.visit": "Je visite",
+      "hero.cta.exhibit": "J'expose",
+
+      "anchor.dates.label": "Dates",
+      "anchor.dates.value": "12 — 13 décembre 2026",
+      "anchor.hours.label": "Horaires",
+      "anchor.hours.value": "10h — 18h",
+      "anchor.venue.label": "Lieu",
+      "anchor.venue.value": "Cowool Grenoble",
+      "anchor.freeEntry": "Entrée libre",
+
+      "about.title": "À propos",
+      "about.lead": "Pendant deux jours, venez découvrir, goûter, échanger et rencontrer des artisans et entrepreneurs passionnés qui font vivre le goût et le savoir-faire autrement.",
+      "about.card1.title": "Découvrir",
+      "about.card1.text": "Des produits façonnés à la main, des recettes transmises, des gestes qui se voient.",
+      "about.card2.title": "Goûter",
+      "about.card2.text": "Dégustations, échantillons, assiettes : on vient aussi pour le goût.",
+      "about.card3.title": "Échanger",
+      "about.card3.text": "Poser des questions, comprendre une matière, discuter du prix juste.",
+      "about.card4.title": "Rencontrer",
+      "about.card4.text": "Les visages derrière les produits, les ateliers, les producteurs.",
+
+      "visitors.kicker": "Pour les visiteurs",
+      "visitors.title": "Ce qui vous attend",
+      "visitors.programme.title": "Programme",
+      "visitors.programme.day1": "Vendredi 12 décembre",
+      "visitors.programme.day2": "Samedi 13 décembre",
+      "visitors.programme.placeholder": "Programme en cours de finalisation. Il sera publié ici avant l'ouverture.",
+      "visitors.exhibitors.title": "Quelques exposants",
+      "visitors.exhibitors.lead": "Boulangers, pâtissiers, chocolatiers, apiculteurs, fromagers, producteurs d'huiles, d'épices, de confitures — voici un aperçu.",
+      "visitors.animations.title": "Ateliers et animations",
+      "visitors.animations.text": "[À COMPLÉTER] — ateliers de démonstration, dégustations guidées, rencontres avec les producteurs. Détails à venir.",
+
+      "exhibitors.kicker": "Pour les exposants",
+      "exhibitors.title": "Exposer à la Place des Créateurs",
+      "exhibitors.lead": "Deux jours pour présenter votre production, rencontrer un public curieux et rejoindre un réseau local d'artisans.",
+      "exhibitors.why.title": "Pourquoi exposer",
+      "exhibitors.why.r1.title": "Visibilité locale",
+      "exhibitors.why.r1.text": "Un événement grand public à Grenoble, au cœur du mois de décembre, dans un lieu traversé toute la journée.",
+      "exhibitors.why.r2.title": "Un réseau",
+      "exhibitors.why.r2.text": "Une trentaine d'artisans et de producteurs réunis pendant deux jours, à côté de vous.",
+      "exhibitors.why.r3.title": "Un public engagé",
+      "exhibitors.why.r3.text": "Des visiteurs qui viennent pour acheter, goûter et comprendre — pas seulement regarder.",
+      "exhibitors.pricing.title": "Tarifs des stands",
+      "exhibitors.pricing.note": "Tarifs de lancement pour l'édition 2026. [À COMPLÉTER par l'organisateur].",
+      "exhibitors.eligibility.title": "Critères d'éligibilité",
+      "exhibitors.apply.title": "Candidater",
+      "exhibitors.apply.lead": "Remplissez le formulaire de candidature. Nous revenons vers vous avec les détails pratiques et le contrat de stand.",
+      "exhibitors.apply.cta": "Candidater via le formulaire",
+      "exhibitors.apply.note": "Aucune date limite affichée : les candidatures sont étudiées au fil de l'eau.",
+
+      "info.kicker": "Infos pratiques",
+      "info.title": "Venir, se repérer",
+      "info.venue": "Cowool Grenoble",
+      "info.address": "1 avenue d'Innsbruck, 38000 Grenoble",
+      "info.mapsCta": "Ouvrir dans Google Maps",
+      "info.dates.label": "Dates",
+      "info.dates.value": "12 & 13 décembre 2026",
+      "info.hours.label": "Horaires",
+      "info.hours.value": "10h — 18h",
+      "info.access.label": "Accès",
+      "info.access.value": "[À COMPLÉTER] — tram, bus, parking à proximité. Précisions à venir.",
+      "info.pmr.label": "Accessibilité PMR",
+      "info.pmr.value": "[À COMPLÉTER] — informations d'accès à préciser par l'organisateur.",
+      "info.contact.label": "Contact",
+      "info.contact.emailLabel": "Email",
+      "info.contact.socialLabel": "Réseaux",
+
+      "footer.baseline": "Le rendez-vous des artisans des métiers de bouche à Grenoble.",
+      "footer.quick.title": "Naviguer",
+      "footer.follow.title": "Suivre",
+      "footer.legal.mentions": "Mentions légales",
+      "footer.legal.privacy": "Politique de confidentialité",
+      "footer.rights": "© 2026 Place des Créateurs.",
+
+      "exhibitors.list": [
+        { "icon": "bread",  "name": "[Exposant 01]", "specialty": "[Boulangerie]" },
+        { "icon": "honey",  "name": "[Exposant 02]", "specialty": "[Pâtisserie]" },
+        { "icon": "cheese", "name": "[Exposant 03]", "specialty": "[Chocolaterie]" },
+        { "icon": "olive",  "name": "[Exposant 04]", "specialty": "[Miel & produits de la ruche]" },
+        { "icon": "jar",    "name": "[Exposant 05]", "specialty": "[Fromages fermiers]" },
+        { "icon": "chili",  "name": "[Exposant 06]", "specialty": "[Huiles & épices]" }
+      ],
+
+      "stands.list": [
+        {
+          "name": "Stand standard",
+          "surface": "3 m²",
+          "price": "X €",
+          "features": ["Table", "2 chaises", "Électricité"]
+        },
+        {
+          "name": "Stand premium",
+          "surface": "6 m²",
+          "price": "Y €",
+          "features": ["Table", "4 chaises", "Électricité", "Enseigne au nom de l'exposant", "Emplacement prioritaire"]
+        },
+        {
+          "name": "Food truck",
+          "surface": "Emplacement extérieur",
+          "price": "Z €",
+          "features": ["Branchement électrique", "Signalétique dédiée", "Zone de service"]
+        }
+      ],
+
+      "eligibility.list": [
+        "Activité dans les métiers de bouche ou l'artisanat alimentaire.",
+        "Production artisanale ou locale, identifiable et traçable.",
+        "Statut : artisan, producteur, TPE, créateur indépendant.",
+        "[À COMPLÉTER] — autres critères à préciser par l'organisateur."
+      ]
+    },
+
+    "en": {
+      "meta.title": "Place des Créateurs — Artisan food market in Grenoble",
+      "meta.description": "Two days to discover, taste and meet Grenoble's artisan food makers. 12 & 13 December 2026, Cowool Grenoble. Free entry.",
+
+      "a11y.skip": "Skip to content",
+      "a11y.lang": "Language",
+      "a11y.openMenu": "Open menu",
+      "a11y.closeMenu": "Close menu",
+      "a11y.anchorLabel": "Event details",
+      "a11y.countdown": "Countdown to opening",
+
+      "nav.home": "Home",
+      "nav.about": "About",
+      "nav.programme": "Programme",
+      "nav.exhibitors": "Exhibitors",
+      "nav.info": "Practical info",
+      "nav.cta": "Become an exhibitor",
+
+      "hero.kicker": "12 — 13 December 2026 · Grenoble",
+      "hero.titleLine1": "Place",
+      "hero.titleLine2": "des Créateurs",
+      "hero.subtitle": "A two-day gathering of Grenoble's artisan food makers.",
+      "hero.countdown.label": "Opens in",
+      "hero.countdown.days": "days",
+      "hero.countdown.hours": "hours",
+      "hero.countdown.minutes": "minutes",
+      "hero.countdown.seconds": "seconds",
+      "hero.cta.visit": "Visit",
+      "hero.cta.exhibit": "Exhibit",
+
+      "anchor.dates.label": "Dates",
+      "anchor.dates.value": "12 — 13 December 2026",
+      "anchor.hours.label": "Hours",
+      "anchor.hours.value": "10am — 6pm",
+      "anchor.venue.label": "Venue",
+      "anchor.venue.value": "Cowool Grenoble",
+      "anchor.freeEntry": "Free entry",
+
+      "about.title": "About",
+      "about.lead": "For two days, come and discover, taste, talk and meet the artisans and producers who are redefining taste and craft.",
+      "about.card1.title": "Discover",
+      "about.card1.text": "Hand-shaped products, recipes passed down, gestures you can watch.",
+      "about.card2.title": "Taste",
+      "about.card2.text": "Tastings, samples, plates — flavour is part of the visit.",
+      "about.card3.title": "Talk",
+      "about.card3.text": "Ask questions, understand a material, discuss fair pricing.",
+      "about.card4.title": "Meet",
+      "about.card4.text": "The faces behind the products, the workshops, the growers.",
+
+      "visitors.kicker": "For visitors",
+      "visitors.title": "What to expect",
+      "visitors.programme.title": "Programme",
+      "visitors.programme.day1": "Friday 12 December",
+      "visitors.programme.day2": "Saturday 13 December",
+      "visitors.programme.placeholder": "Programme is being finalised. It will be published here before opening.",
+      "visitors.exhibitors.title": "A few exhibitors",
+      "visitors.exhibitors.lead": "Bakers, pastry chefs, chocolatiers, beekeepers, cheesemakers, oil and spice producers — here is a taste.",
+      "visitors.animations.title": "Workshops and events",
+      "visitors.animations.text": "[TO BE COMPLETED] — demonstration workshops, guided tastings, meet-the-maker sessions. Details coming.",
+
+      "exhibitors.kicker": "For exhibitors",
+      "exhibitors.title": "Exhibit at Place des Créateurs",
+      "exhibitors.lead": "Two days to present your production, meet a curious public and join a local network of makers.",
+      "exhibitors.why.title": "Why exhibit",
+      "exhibitors.why.r1.title": "Local visibility",
+      "exhibitors.why.r1.text": "A public event in Grenoble, in the middle of December, in a venue that sees foot traffic all day.",
+      "exhibitors.why.r2.title": "A network",
+      "exhibitors.why.r2.text": "Around thirty artisans and producers gathered for two days, right beside you.",
+      "exhibitors.why.r3.title": "An engaged audience",
+      "exhibitors.why.r3.text": "Visitors who come to buy, taste and understand — not just to look.",
+      "exhibitors.pricing.title": "Stand pricing",
+      "exhibitors.pricing.note": "Launch pricing for the 2026 edition. [TO BE COMPLETED by the organiser].",
+      "exhibitors.eligibility.title": "Eligibility criteria",
+      "exhibitors.apply.title": "Apply",
+      "exhibitors.apply.lead": "Fill in the application form. We will come back to you with practical details and the stand contract.",
+      "exhibitors.apply.cta": "Apply through the form",
+      "exhibitors.apply.note": "No deadline displayed: applications are reviewed on a rolling basis.",
+
+      "info.kicker": "Practical info",
+      "info.title": "Getting there",
+      "info.venue": "Cowool Grenoble",
+      "info.address": "1 avenue d'Innsbruck, 38000 Grenoble",
+      "info.mapsCta": "Open in Google Maps",
+      "info.dates.label": "Dates",
+      "info.dates.value": "12 & 13 December 2026",
+      "info.hours.label": "Hours",
+      "info.hours.value": "10am — 6pm",
+      "info.access.label": "Access",
+      "info.access.value": "[TO BE COMPLETED] — tram, bus, nearby parking. Details coming.",
+      "info.pmr.label": "Accessibility",
+      "info.pmr.value": "[TO BE COMPLETED] — access details to be specified by the organiser.",
+      "info.contact.label": "Contact",
+      "info.contact.emailLabel": "Email",
+      "info.contact.socialLabel": "Social",
+
+      "footer.baseline": "Grenoble's gathering of artisan food makers.",
+      "footer.quick.title": "Navigate",
+      "footer.follow.title": "Follow",
+      "footer.legal.mentions": "Legal notice",
+      "footer.legal.privacy": "Privacy policy",
+      "footer.rights": "© 2026 Place des Créateurs.",
+
+      "exhibitors.list": [
+        { "icon": "bread",  "name": "[Exhibitor 01]", "specialty": "[Bakery]" },
+        { "icon": "honey",  "name": "[Exhibitor 02]", "specialty": "[Pastry]" },
+        { "icon": "cheese", "name": "[Exhibitor 03]", "specialty": "[Chocolate]" },
+        { "icon": "olive",  "name": "[Exhibitor 04]", "specialty": "[Honey & hive products]" },
+        { "icon": "jar",    "name": "[Exhibitor 05]", "specialty": "[Farmhouse cheeses]" },
+        { "icon": "chili",  "name": "[Exhibitor 06]", "specialty": "[Oils & spices]" }
+      ],
+
+      "stands.list": [
+        {
+          "name": "Standard stand",
+          "surface": "3 m²",
+          "price": "X €",
+          "features": ["Table", "2 chairs", "Electricity"]
+        },
+        {
+          "name": "Premium stand",
+          "surface": "6 m²",
+          "price": "Y €",
+          "features": ["Table", "4 chairs", "Electricity", "Signage with your name", "Priority location"]
+        },
+        {
+          "name": "Food truck",
+          "surface": "Outdoor slot",
+          "price": "Z €",
+          "features": ["Electrical hook-up", "Dedicated signage", "Service area"]
+        }
+      ],
+
+      "eligibility.list": [
+        "Activity in the food trades or artisanal food sector.",
+        "Artisanal or local production, identifiable and traceable.",
+        "Status: artisan, producer, small business, independent maker.",
+        "[TO BE COMPLETED] — further criteria to be specified by the organiser."
+      ]
+    }
+  }
+}
